@@ -19,7 +19,7 @@ public class Fabonnaci
         int n3=3;
         int n4=4;
         int n5;
-        String holder =  " ";
+        String holder =  n1 +" " + n2 + " " + n3 + " " + n4 + " ";
         for(int i=0;i<=numrange;i++)
         {
            n5=n1+n2+n3+n4;
@@ -29,6 +29,7 @@ public class Fabonnaci
            n4=n5;
            holder += n5 + " ";
         }
-        return "the number range" + numrange + "<br/>" + holder;
+        return "Fibonacci 4 for the range: " + numrange + "<br/>" +
+                holder;
     }
 }
