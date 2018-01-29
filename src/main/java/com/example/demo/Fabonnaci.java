@@ -10,7 +10,7 @@ public class Fabonnaci
 {
     @RequestMapping("/fabonnaci")
 
-   public String fabonncinumber(@RequestParam ("holder") String Holder, @RequestParam ("numrange") int numrange)
+   public String fabonncinumber( @RequestParam ("numrange") int numrange)
 
 
     {
@@ -19,8 +19,7 @@ public class Fabonnaci
         int n3=3;
         int n4=4;
         int n5;
-        String holder="";
-
+        String holder =  " ";
         for(int i=0;i<=numrange;i++)
         {
            n5=n1+n2+n3+n4;
@@ -30,6 +29,6 @@ public class Fabonnaci
            n4=n5;
            holder += n5 + " ";
         }
-        return numrange + holder;
+        return "the number range" + numrange + "<br/>" + holder;
     }
 }
